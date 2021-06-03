@@ -1,4 +1,3 @@
-import javax.servlet.Servlet;
 import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebInitParam;
@@ -7,13 +6,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-
-@WebServlet(name = "thirdServlet",urlPatterns={"/thirdServlet"},
-initParams={@WebInitParam(name = "firstParam",value = "one"),
-        @WebInitParam(name = "firstParam",value = "two")}
-)
 public class ThirdServlet extends HttpServlet {
-    private static final long ser=1L;
+    private static final long serialVersionUid=1L;
     private String first=null;
     private String second=null;
     private static int cont=1;
